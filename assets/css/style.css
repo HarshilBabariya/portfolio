@@ -1454,8 +1454,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   article { min-height: 100%; }
 
   main {
-    /* max-width: 1200px; */
-    /* margin-inline: auto; */
+    max-width: 1200px;
+    margin-inline: auto;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -1518,10 +1518,4 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
-}
-#canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
