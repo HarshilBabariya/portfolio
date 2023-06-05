@@ -106,19 +106,37 @@ for (let i = 0; i < filterBtn.length; i++) {
 }
 
 // contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
+const form1 = document.querySelector("[data-form-1]");
+const formInputs1 = document.querySelectorAll("[data-form-input-1]");
+const formBtn1 = document.querySelector("[data-form-btn-1]");
 
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+const form2 = document.querySelector("[data-form-2]");
+const formInputs2 = document.querySelectorAll("[data-form-input-2]");
+const formBtn2 = document.querySelector("[data-form-btn-2]");
+
+// add event to all form input field of feedback form
+for (let i = 0; i < formInputs1.length; i++) {
+  formInputs1[i].addEventListener("input", function () {
 
     // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
+    if (form1.checkValidity()) {
+      formBtn1.removeAttribute("disabled");
     } else {
-      formBtn.setAttribute("disabled", "");
+      formBtn1.setAttribute("disabled", "");
+    }
+
+  });
+}
+
+// add event to all form input field of contact form
+for (let i = 0; i < formInputs2.length; i++) {
+  formInputs2[i].addEventListener("input", function () {
+
+    // check form validation
+    if (form2.checkValidity()) {
+      formBtn2.removeAttribute("disabled");
+    } else {
+      formBtn2.setAttribute("disabled", "");
     }
 
   });
