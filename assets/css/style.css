@@ -21,7 +21,7 @@
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
+    hsl(198, 20%, 26%) 0%, 
     hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
@@ -268,7 +268,6 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
   border-radius: 20px;
 }
 
@@ -1518,4 +1517,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
