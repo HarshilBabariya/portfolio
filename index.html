@@ -8,7 +8,7 @@
 
     <link
       rel="shortcut icon"
-      href="./assets/images/my-avatar.png"
+      href="./assets/images/avatar-5.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -246,98 +246,10 @@
           <section class="testimonials">
             <h3 class="h3 testimonials-title">Reviews from clients</h3>
 
-            <ul class="testimonials-list has-scrollbar">
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-1.png"
-                      alt="Kashi sekhda"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Kashi sekhda
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Harshil was hired to implement figma design to corporate
-                      identity web app. We were very pleased with the work done.
-                      He has a lot of experience and is very concerned about the
-                      needs of client.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Janvi bhadesiya"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Janvi bhadesiya
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Harshil's expertise in front-end development was
-                      instrumental in bringing our web application to life. He
-                      has done the great job before the expected time. He
-                      suggests some of the best practices to keep in project
-                      that helps in future also.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-4.png"
-                      alt="George jijo"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    George jijo
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Harshil has good experience in reactJs. He was hired to
-                      create the data recovery application for reduce time to
-                      insert the data to existing tables via eventhub and api
-                      also. He has such a nice hands on design so that the user
-                      can easily undestand what to do.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <ul class="testimonials-list has-scrollbar" id="feedback-list"></ul>
           </section>
 
+          <!-- demo for pop-up -->
           <div class="modal-container" data-modal-container>
             <div class="overlay" data-overlay></div>
 
@@ -359,7 +271,6 @@
                 <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-              <!-- demo for pop-up -->
               <div class="modal-content">
                 <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
@@ -620,7 +531,7 @@
             <form class="form" data-form-1>
               <input
                 type="text"
-                name="fullname"
+                name="name"
                 class="form-input"
                 placeholder="Full name"
                 required
