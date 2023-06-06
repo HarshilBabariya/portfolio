@@ -158,21 +158,6 @@ for (let i = 0; i < formInputs1.length; i++) {
     event.preventDefault();
     const name = document.getElementsByName("name")[0].value;
     const feedback = document.getElementsByName("feedback")[0].value;
-    if (name && feedback !== "") {
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "harshilbabariya01@gmail.com",
-        Password: "Harshil@01",
-        To: "harshilbabariya01@gmail.com.com",
-        From: "you@isp.com",
-        Subject: "This is the subject",
-        Body: "And this is the body",
-      }).then((message) => {
-        document.getElementsByName("name")[0].value = "";
-        document.getElementsByName("feedback")[0].value = "";
-        alert(message);
-      });
-    }
   });
 }
 
@@ -186,28 +171,6 @@ for (let i = 0; i < formInputs2.length; i++) {
       formBtn2.setAttribute("disabled", "");
     }
   });
-
-  // formBtn2.addEventListener("click", function () {
-  //   event.preventDefault();
-  //   const name = document.getElementsByName("fullname")[0].value;
-  //   const email = document.getElementsByName("email")[0].value;
-  //   const message = document.getElementsByName("message")[0].value;
-  //   document.getElementsByName("fullname")[0].value = "";
-  //   document.getElementsByName("email")[0].value = "";
-  //   document.getElementsByName("message")[0].value = "";
-  //   if (name && email && message !== "") {
-  //     Email.send({
-  //       Host: "smtp.elasticmail.com",
-  //       Username: "harshilbabariya01@gmail.com",
-  //       Password: "Harshil@01",
-  //       To: "harshilbabariya01@gmail.com.com",
-  //       From: email,
-  //       Subject: `New Contact by ${name}`,
-  //       Body: "And this is the body",
-  //     }).then((message) => alert(message));
-  //     return false
-  //   }
-  // });
 }
 
 // page navigation variables
