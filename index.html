@@ -573,7 +573,22 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form-2>
+            <form
+              action="https://formsubmit.co/125e17b5977ccfe31f9d2f107dcee735"
+              target="_blank"
+              method="POST"
+              class="form"
+              data-form-2
+            >
+              <input type="hidden" name="_next" value="./thankyou.html" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New Contact!" />
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thanks for connecting with me."
+              />
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -622,5 +637,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
