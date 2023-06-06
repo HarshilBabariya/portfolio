@@ -139,6 +139,9 @@ for (let i = 0; i < formInputs1.length; i++) {
     }
 
   });
+  formBtn1.addEventListener("click", function () {
+    event.preventDefault();
+  })
 }
 
 // add event to all form input field of contact form
@@ -153,6 +156,9 @@ for (let i = 0; i < formInputs2.length; i++) {
     }
 
   });
+  formBtn2.addEventListener("click", function () {
+    event.preventDefault();
+  })
 }
 
 // page navigation variables
