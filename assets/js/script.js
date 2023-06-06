@@ -162,7 +162,8 @@ for (let i = 0; i < formInputs1.length; i++) {
     document.getElementsByName("feedback")[0].value = "";
     if (name && feedback !== "") {
       const subject = `New Feedback From ${name}`;
-      const body = `Name: ${name}%0D%0AFeedback: ${feedback}`;
+      const body = `Name: ${name},
+      Feedback: ${feedback}`;
 
       const mailtoLink = `mailto:harshilbabariya01@gmail.com?subject=${encodeURIComponent(
         subject
