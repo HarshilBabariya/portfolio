@@ -16,15 +16,27 @@ const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
+const months = ['Jan', 'Feb', 'March', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
+const modalDate = document.querySelector("[data-modal-date]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
+}
+
+function getRandomDate() {
+  const startDate = new Date('01-03-2022')
+  const endDate = new Date('01-03-2023')
+  const timeDiff = endDate.getTime() - startDate.getTime();
+  const randomTime = Math.random() * timeDiff;
+  const randomDate = new Date(startDate.getTime() + randomTime);
+  return randomDate.toISOString().slice(8, 10) + ' ' + months[randomDate.getUTCMonth()] + ', ' + randomDate.getFullYear();
 }
 
 // add click event to all modal items
@@ -35,6 +47,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalDate.innerHTML = getRandomDate();
     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
 
     testimonialsModalFunc();
